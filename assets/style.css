@@ -1,0 +1,425 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body Background */
+
+body {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(rgba(11, 18, 38, 0.7), rgba(11, 18, 38, 0.7)),
+    url("../assets/bankimage.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #f5f7fa;
+}
+
+/* Container */
+
+.container {
+  width: 100%;
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+
+  background: rgba(10, 42, 102, 0.85);
+
+  backdrop-filter: blur(10px);
+
+  padding: 18px 60px;
+}
+
+/* Navbar List */
+
+.navbar ul {
+  display: flex;
+
+  align-items: center;
+
+  list-style: none;
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-right: auto;
+}
+
+/* Logo Image */
+
+.logo img {
+  height: 35px;
+  width: auto;
+}
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #2ed6f3;
+}
+
+/* Navbar Links */
+
+.navbar ul li {
+  margin-left: 30px;
+}
+
+/* Link Style */
+
+.navbar ul li a {
+  text-decoration: none;
+
+  color: #f5f7fa;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  padding: 8px 12px;
+
+  border-radius: 6px;
+
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+
+.navbar ul li a:hover {
+  color: #2ed6f3;
+
+  background: rgba(255, 255, 255, 0.08);
+}
+.navbar a.active {
+  color: #2ed6f3;
+}
+
+/* Hero Section */
+
+.hero {
+  height: 85vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+/* Hero Title */
+
+.hero h1 {
+  font-size: 55px;
+
+  font-weight: 600;
+
+  margin-bottom: 15px;
+
+  text-shadow: 0 0 10px rgba(46, 214, 243, 0.7);
+}
+
+/* Hero Text */
+
+.hero p {
+  font-size: 20px;
+
+  margin-bottom: 25px;
+
+  color: #d1e4ff;
+}
+
+/* Button */
+
+.btn {
+  background: #2ed6f3;
+
+  color: #0b1226;
+
+  padding: 12px 30px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+/* Button Hover */
+
+.btn:hover {
+  background: #1da1f2;
+
+  box-shadow:
+    0 0 10px #2ed6f3,
+    0 0 20px #2ed6f3;
+}
+
+/* login page */
+/* Login Form Styling */
+.login-form {
+  background: rgba(10, 42, 102, 0.85);
+  padding: 30px 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  max-width: 90%;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  color: #d1e4ff;
+  margin-bottom: 6px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.login-form input,
+.login-form select {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.login-form input:focus,
+.login-form select:focus {
+  outline: none;
+  box-shadow: 0 0 8px #2ed6f3;
+}
+
+.login-form button {
+  margin-top: 15px;
+}
+
+/*signup*/
+.signup-form {
+  background: rgba(10, 42, 102, 0.85); /* same as login */
+  padding: 30px 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  max-width: 90%;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Form Layout */
+.signup-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.signup-form label {
+  color: #d1e4ff;
+  margin-bottom: 6px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+/* Inputs and Dropdown */
+.signup-form input,
+.signup-form select {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* Input focus */
+.signup-form input:focus,
+.signup-form select:focus {
+  outline: none;
+  box-shadow: 0 0 8px #2ed6f3; /* same subtle glow as login */
+}
+
+/* Button */
+.signup-form button {
+  margin-top: 15px;
+  background: #2ed6f3;
+  color: #0b1226;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    transform 0.15s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Button Hover */
+.signup-form button:hover {
+  background: #1da1f2;
+  transform: translateY(-1px); /* subtle lift */
+  box-shadow: 0 3px 8px rgba(46, 214, 243, 0.3);
+}
+.login-form,
+.signup-form {
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Contact Section */
+
+.contact-section {
+  min-height: 85vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 40px;
+}
+
+.contact-section h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+
+  text-shadow: 0 0 10px rgba(46, 214, 243, 0.6);
+}
+
+.contact-section p {
+  margin-bottom: 40px;
+  color: #d1e4ff;
+}
+
+/* Container */
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+/* Contact Info */
+
+.contact-info {
+  background: rgba(10, 42, 102, 0.85);
+
+  padding: 30px;
+
+  border-radius: 10px;
+
+  width: 320px;
+
+  text-align: left;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+
+  color: #2ed6f3;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+
+  line-height: 1.5;
+}
+
+/* Contact Form */
+
+.contact-form {
+  background: rgba(10, 42, 102, 0.85);
+
+  padding: 30px;
+
+  border-radius: 10px;
+
+  width: 350px;
+
+  text-align: left;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 10px;
+
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  margin-bottom: 10px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+
+  box-shadow: 0 0 8px #2ed6f3;
+}
+
+.contact-form button {
+  margin-top: 10px;
+}

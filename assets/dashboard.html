@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SBI Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <header class="topbar">
+      <div class="logo">
+        <img src="logo1.png" />
+
+        <span>SBI Banking System</span>
+      </div>
+
+      <div class="welcome">Welcome <b id="username">User</b></div>
+    </header>
+
+    <!-- NAVIGATION MENU -->
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="./createAccount.html">New Account</a></li>
+        <li><a href="./transfer.html">Transfer</a></li>
+        <li><a href="./Debit.html">Debit</a></li>
+        <li><a href="./credit.html">Credit</a></li>
+        <li><a href="./checkbalance.html">Check Balance</a></li>
+        <li><a href="./transactionHistory.html">Transaction History</a></li>
+        <li><a href="./changepassword.html">Change Password</a></li>
+        <li><a href="../index.html">Logout</a></li>
+      </ul>
+    </nav>
+
+    <!-- MAIN AREA -->
+
+    <section class="dashboard">
+      <div class="overlay">
+        <h1>Welcome to SBI Internet Banking</h1>
+
+        <p>Secure • Fast • Reliable Banking</p>
+      </div>
+    </section>
+
+    <script>
+      /* Example username display */
+
+      let name = "Abhay";
+
+      document.getElementById("username").innerText = name;
+    </script>
+  </body>
+</html>

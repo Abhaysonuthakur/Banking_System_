@@ -1,0 +1,281 @@
+/* GOOGLE FONT */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* BODY */
+
+body {
+  background: #f4f7fb;
+  color: #222;
+}
+
+/* ================= HEADER ================= */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #c9e2ef;
+
+  padding: 12px 35px;
+
+  border-bottom: 3px solid #0b3edc;
+}
+
+/* LOGO */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 22px;
+  font-weight: 700;
+  color: #0b3edc;
+}
+
+.logo img {
+  width: 42px;
+}
+
+/* USERNAME */
+
+.welcome {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* ================= NAVBAR ================= */
+
+.menu {
+  background: #0b3edc;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+
+  padding: 14px 35px;
+
+  gap: 25px;
+}
+
+.menu ul li a {
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  padding: 6px 12px;
+
+  border-radius: 5px;
+
+  transition: 0.3s;
+}
+
+.menu ul li a:hover {
+  background: white;
+
+  color: #0b3edc;
+}
+
+/* ================= DASHBOARD BACKGROUND ================= */
+
+.dashboard {
+  height: 90vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("./dashboard.png");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================= CENTER BOX ================= */
+
+.overlay {
+  background: rgba(255, 255, 255, 0.15);
+
+  padding: 50px 70px;
+
+  border-radius: 14px;
+
+  backdrop-filter: blur(8px);
+
+  text-align: center;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+  animation: fadeUp 1s ease;
+}
+
+/* ================= HEADING ================= */
+
+.overlay h1 {
+  font-size: 46px;
+
+  color: white;
+
+  letter-spacing: 1px;
+
+  font-weight: 700;
+
+  margin-bottom: 10px;
+
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* ================= SUBTEXT ================= */
+
+.overlay p {
+  font-size: 20px;
+
+  color: #e5e5e5;
+
+  letter-spacing: 1px;
+
+  font-weight: 500;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .overlay h1 {
+    font-size: 34px;
+  }
+
+  .overlay {
+    padding: 30px;
+  }
+}
+
+/* ================= BALANCE RESULT ================= */
+
+.balance-box {
+  margin-top: 20px;
+
+  background: #f0f4ff;
+
+  padding: 18px;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.balance-box h3 {
+  color: #0b3edc;
+
+  margin-bottom: 6px;
+
+  font-weight: 600;
+}
+
+.balance-box p {
+  font-size: 24px;
+
+  font-weight: 700;
+
+  color: #111;
+}
+
+/* ================= TRANSACTION TABLE ================= */
+
+.history-box {
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 12px;
+
+  width: 750px;
+
+  max-width: 92%;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.history-box h2 {
+  text-align: center;
+
+  margin-bottom: 25px;
+
+  color: #0b3edc;
+
+  font-weight: 700;
+}
+
+/* TABLE */
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 12px;
+
+  border-bottom: 1px solid #ddd;
+
+  text-align: center;
+
+  font-size: 15px;
+}
+
+table th {
+  background: #0b3edc;
+
+  color: white;
+
+  font-weight: 600;
+}
+
+table tr:hover {
+  background: #f5f7ff;
+}

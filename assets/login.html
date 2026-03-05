@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SBI Banking System</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="icon" type="image/png" href="assets/logo1.png" />
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <ul>
+          <li class="logo">
+            <a href="../index.html">
+              <img src="../assets/logo1.png" alt="SBI Logo" />
+              STATE BANK OF INDIA
+            </a>
+          </li>
+
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./signup.html">Sign Up</a></li>
+          <li><a href="./contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero">
+        <h1>Login to Your Account</h1>
+        <p>Secure access for Admin and Users</p>
+
+        <div class="login-form">
+          <form action="#" method="post">
+            <label for="role">User Type</label>
+            <select name="role" id="role" required>
+              <option value="">-- Select --</option>
+              <option value="admin">Admin</option>
+              <option value="user">User</option>
+            </select>
+
+            <label for="UserName">UserName</label>
+            <input
+              type="username"
+              name="username"
+              id="username"
+              placeholder="Enter your username"
+              required
+            />
+
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+
+            <button type="submit" class="btn">Login</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
