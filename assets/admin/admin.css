@@ -1,0 +1,185 @@
+/* GOOGLE FONT */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* BODY */
+
+body {
+  background: #f4f7fb;
+  color: #222;
+}
+
+/* HEADER */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #c9e2ef;
+
+  padding: 12px 35px;
+
+  border-bottom: 3px solid #0b3edc;
+}
+
+/* LOGO */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 22px;
+  font-weight: 700;
+  color: #0b3edc;
+}
+
+.logo img {
+  width: 42px;
+}
+
+/* ADMIN INFO */
+
+.admin-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* LOGOUT BUTTON */
+
+.logout-btn {
+  background: #0b3edc;
+
+  color: white;
+
+  padding: 8px 14px;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #072aa6;
+}
+
+/* NAVBAR */
+
+.menu {
+  background: #0b3edc;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu ul {
+  display: flex;
+
+  list-style: none;
+
+  padding: 14px 35px;
+
+  gap: 25px;
+}
+
+/* MENU LINKS */
+
+.menu ul li a {
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  padding: 6px 12px;
+
+  border-radius: 5px;
+
+  transition: 0.3s;
+}
+
+.menu ul li a:hover {
+  background: white;
+
+  color: #0b3edc;
+}
+
+.menu .active a {
+  background: white;
+
+  color: #0b3edc;
+}
+
+/* DASHBOARD BACKGROUND */
+
+.dashboard {
+  height: 90vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../dashboard.png");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ADMIN BOX */
+
+.admin-box {
+  background: rgba(255, 255, 255, 0.92);
+
+  padding: 50px 60px;
+
+  border-radius: 14px;
+
+  text-align: center;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* HEADING */
+
+.admin-box h1 {
+  color: #0b3edc;
+
+  font-size: 36px;
+
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+
+.admin-box p {
+  font-size: 18px;
+
+  font-weight: 500;
+
+  color: #333;
+}
