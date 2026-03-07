@@ -14,7 +14,7 @@ body {
 
   background:
     linear-gradient(rgba(11, 18, 38, 0.7), rgba(11, 18, 38, 0.7)),
-    url("../assets/bankimage.png");
+    url("../assets/banking2.png");
 
   background-size: cover;
   background-position: center;
@@ -423,3 +423,4 @@ body {
 .contact-form button {
   margin-top: 10px;
 }
+
